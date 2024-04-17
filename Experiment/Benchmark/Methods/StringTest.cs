@@ -36,7 +36,7 @@ namespace Experiment.Benchmark.Methods
         {
             ReadOnlySpan<char> inputValue = _inputValue;
             var lastIndexOfQuote = inputValue.LastIndexOf('\'');
-            if (lastIndexOfQuote != -1)
+            if (lastIndexOfQuote is not -1)
             {
                 return inputValue.Slice(0, lastIndexOfQuote).ToString() + " value";
             }
@@ -49,7 +49,7 @@ namespace Experiment.Benchmark.Methods
         {
             ReadOnlySpan<char> inputValue = _inputValue;
             var lastIndexOfQuote = inputValue.LastIndexOf('\'');
-            if (lastIndexOfQuote != -1)
+            if (lastIndexOfQuote is not -1)
             {
                 return inputValue[..lastIndexOfQuote].ToString() + " value";
             }
