@@ -7,9 +7,8 @@ namespace Experiment
     {
         static void Main(string[] args)
         {
-            BenchmarkRunner.Run<SubstringVsTake>();
+            BenchmarkRunner.Run<StringTest>();
         }
-
     }
 }
 
