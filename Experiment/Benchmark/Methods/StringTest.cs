@@ -35,9 +35,23 @@ namespace Experiment.Benchmark.Methods
         public string MethodWithSlice()
         {
             ReadOnlySpan<char> inputValue = _inputValue;
-            if (inputValue.LastIndexOf("'") != -1)
+            var lastIndexOfQuote = inputValue.LastIndexOf('\'');
+            if (lastIndexOfQuote != -1)
             {
-                return inputValue.Slice(0, inputValue.Length - 1).ToString() + " value";
+                return inputValue.Slice(0, lastIndexOfQuote).ToString() + " value";
+            }
+
+            return _inputValue;
+        }
+
+        [Benchmark]
+        public string MethodWithRange()
+        {
+            ReadOnlySpan<char> inputValue = _inputValue;
+            var lastIndexOfQuote = inputValue.LastIndexOf('\'');
+            if (lastIndexOfQuote != -1)
+            {
+                return inputValue[..lastIndexOfQuote].ToString() + " value";
             }
 
             return _inputValue;
