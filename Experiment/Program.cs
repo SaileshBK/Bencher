@@ -1,14 +1,13 @@
 ﻿using BenchmarkDotNet.Running;
-using Experiment.Benchmark.Methods;
+using Experiment.Benchmark;
 
-namespace Experiment
+namespace Experiment;
+
+public static class Program
 {
-    public static class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            BenchmarkRunner.Run<StringTest>();
-        }
+        BenchmarkRunner.Run<StingConcatFunctionsBenchmark>();
     }
 }
 
