@@ -7,7 +7,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        BenchmarkRunner.Run<StingConcatFunctionsBenchmark>();
+        /*
+         * To run the Benchmark Simply pass the benchmark class and run it
+         * on Release mode. 
+         * For example : RunBenchmark<ClassNeedToBenchMark>();
+         */
+        RunBenchmark<StingConcatFunctionsBenchmark>();
+    }
+
+    public static void RunBenchmark<T>() where T : class
+    {
+        BenchmarkRunner.Run<T>();
     }
 }
 

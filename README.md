@@ -1,3 +1,10 @@
+# Run
+    /*
+     * To run the Benchmark, Open Program.cs. Simply pass the benchmark class and run it
+     * on Release mode. 
+     * For example : RunBenchmark<ClassNeedToBenchMark>();
+     */
+
 # Summary
 BenchmarkDotNet v0.13.12, Windows 10
 AMD Ryzen 9 5900X, 1 CPU, 24 logical and 12 physical cores
