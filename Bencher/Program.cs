@@ -3,7 +3,7 @@ using Bencher.Benchmark;
 
 namespace Bencher;
 
-public static class Program
+class Program
 {
     static void Main(string[] args)
     {
