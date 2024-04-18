@@ -1,4 +1,4 @@
-﻿namespace Experiment.Functions;
+﻿namespace Bencher.Functions;
 
 public static class StingConcatFunctions
 {

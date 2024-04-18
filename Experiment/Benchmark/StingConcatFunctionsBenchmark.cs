@@ -1,8 +1,8 @@
 ﻿using BenchmarkDotNet.Attributes;
-using Experiment.Functions;
-using Experiment.Utilities;
+using Bencher.Functions;
+using Bencher.Utilities;
 
-namespace Experiment.Benchmark;
+namespace Bencher.Benchmark;
 
 [MemoryDiagnoser]
 public class StingConcatFunctionsBenchmark

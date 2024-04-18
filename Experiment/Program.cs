@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Running;
-using Experiment.Benchmark;
+using Bencher.Benchmark;
 
-namespace Experiment;
+namespace Bencher;
 
 public static class Program
 {

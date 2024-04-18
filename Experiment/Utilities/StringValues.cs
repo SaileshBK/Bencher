@@ -1,4 +1,4 @@
-﻿namespace Experiment.Utilities;
+﻿namespace Bencher.Utilities;
 
 public static class StringValues
 {
