@@ -31,3 +31,11 @@ AMD Ryzen 9 5900X, 1 CPU, 24 logical and 12 physical cores
 | MethodWithIfAndElse        | 2.5309 ns | 0.0059 ns | 0.0049 ns | 2.5308 ns |         - |
 | MethodWithSwitch           | 0.0052 ns | 0.0088 ns | 0.0074 ns | 0.0015 ns |         - |
 | MethodWithSwitchExpression | 0.0016 ns | 0.0046 ns | 0.0038 ns | 0.0000 ns |         - |
+
+## ControlFlowWithGenericFunctions
+
+| Method                     | Mean      | Error    | StdDev   | Allocated |
+|--------------------------- |----------:|---------:|---------:|----------:|
+| MethodWithIfAndElse        |  31.99 ns | 0.163 ns | 0.152 ns |         - |
+| MethodWithSwitch           | 110.30 ns | 0.673 ns | 0.630 ns |         - |
+| MethodWithSwitchExpression | 107.93 ns | 0.293 ns | 0.274 ns |         - |

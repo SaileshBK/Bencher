@@ -10,24 +10,24 @@ public class StingConcatFunctionsBenchmark
     [Benchmark]
     public void MethodWithTake()
     {
-        StingConcatFunctions.MethodWithTake(StringValues.TestString);
+        StingConcatFunctions.MethodWithTake(Constants.TestString);
     }
 
     [Benchmark]
     public void MethodWithSubstring()
     {
-        StingConcatFunctions.MethodWithSubstring(StringValues.TestString);
+        StingConcatFunctions.MethodWithSubstring(Constants.TestString);
     }
 
     [Benchmark]
     public void MethodWithSlice()
     {
-        StingConcatFunctions.MethodWithSlice(StringValues.TestString);
+        StingConcatFunctions.MethodWithSlice(Constants.TestString);
     }
 
     [Benchmark]
     public void MethodWithRange()
     {
-        StingConcatFunctions.MethodWithRange(StringValues.TestString);
+        StingConcatFunctions.MethodWithRange(Constants.TestString);
     }
 }

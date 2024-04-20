@@ -14,7 +14,8 @@ class Program
          */
 
         //RunBenchmark<StingConcatFunctionsBenchmark>();
-        RunBenchmark<ControlFlowFunctionsBenchmark>();
+        //RunBenchmark<ControlFlowFunctionsBenchmark>();
+        RunBenchmark<ControlFlowWithGenericFunctionsBenchmark>();
     }
 
     public static void RunBenchmark<T>() where T : class
