@@ -12,7 +12,9 @@ class Program
          * on Release mode. 
          * For example : RunBenchmark<ClassNeedToBenchMark>();
          */
-        RunBenchmark<StingConcatFunctionsBenchmark>();
+
+        //RunBenchmark<StingConcatFunctionsBenchmark>();
+        RunBenchmark<ControlFlowFunctionsBenchmark>();
     }
 
     public static void RunBenchmark<T>() where T : class
