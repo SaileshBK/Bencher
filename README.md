@@ -47,3 +47,10 @@ AMD Ryzen 9 5900X, 1 CPU, 24 logical and 12 physical cores
 | SimpleString        | 142.9 us | 2.07 us | 1.84 us |     340 B |
 | Structured          | 143.9 us | 2.27 us | 2.01 us |     351 B |
 | StringInterpolation | 144.0 us | 1.39 us | 1.30 us |     295 B |
+
+## MethodParameters
+
+| Method           | Mean     | Error     | StdDev    | Gen0   | Allocated |
+|----------------- |---------:|----------:|----------:|-------:|----------:|
+| MethodWithoutRef | 3.985 ns | 0.0501 ns | 0.0444 ns | 0.0014 |      24 B |
+| MethodWithRef    | 4.027 ns | 0.0980 ns | 0.1048 ns | 0.0014 |      24 B |

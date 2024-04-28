@@ -1,9 +1,4 @@
 ﻿using BenchmarkDotNet.Running;
-using Bencher.Benchmark;
-using Microsoft.Extensions.Logging;
-using BenchmarkDotNet.Engines;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Bencher;
 
@@ -20,11 +15,14 @@ class Program
         //RunBenchmark<StingConcatFunctionsBenchmark>();
         //RunBenchmark<ControlFlowFunctionsBenchmark>();
         //RunBenchmark<ControlFlowWithGenericFunctionsBenchmark>();
+        //RunBenchmark<LoggerBenchmark>();
+        //RunBenchmark<MethodParametersBenchmark>();
 
-
-        RunBenchmark<LoggerBenchmark>();
-
+        // Test Function Outputs
+        //FunctionVerifier.Verify(Function.MethodParameters);
     }
+
+    
 
     public static void RunBenchmark<T>() where T : class
     {
