@@ -1,4 +1,6 @@
-﻿using BenchmarkDotNet.Running;
+﻿using Bencher.Benchmark;
+using Bencher.Functions;
+using BenchmarkDotNet.Running;
 
 namespace Bencher;
 
@@ -17,6 +19,7 @@ class Program
         //RunBenchmark<ControlFlowWithGenericFunctionsBenchmark>();
         //RunBenchmark<LoggerBenchmark>();
         //RunBenchmark<MethodParametersBenchmark>();
+        //RunBenchmark<AsyncTaskBenchmark>();
 
         // Test Function Outputs
         //FunctionVerifier.Verify(Function.MethodParameters);
