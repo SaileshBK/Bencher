@@ -2,6 +2,7 @@
 using Bencher.Interfaces;
 using Bencher.Utilities;
 using BenchmarkDotNet.Attributes;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Bencher.Benchmark
 {
@@ -10,12 +11,16 @@ namespace Bencher.Benchmark
     {
         private IAsyncTask _asyncTask;
 
-
-        // Setup method to initialize the AsyncTask instance
         [GlobalSetup]
         public void Setup()
         {
-            _asyncTask = new AsyncTask();
+            // Set up the DI container
+            var serviceProvider = new ServiceCollection()
+                .AddSingleton<IAsyncTask, AsyncTask>()
+                .BuildServiceProvider();
+
+            // Resolve the dependency
+            _asyncTask = serviceProvider.GetRequiredService<IAsyncTask>();
         }
 
         [Benchmark]
@@ -27,7 +32,6 @@ namespace Bencher.Benchmark
         [Benchmark]
         public async Task ExampleHalfSecondAsync()
         {
-            var asyncTask = new AsyncTask();
             await _asyncTask.ExampleHalfSecondAsync(Constants.TestString);
         }
     }

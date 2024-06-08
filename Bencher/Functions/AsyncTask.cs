@@ -2,7 +2,7 @@
 
 namespace Bencher.Functions
 {
-    internal class AsyncTask : IAsyncTask
+    public class AsyncTask : IAsyncTask
     {
         public async Task<string> ExampleOneSecondAsync(string data)
         {
