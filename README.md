@@ -60,3 +60,9 @@ AMD Ryzen 9 5900X, 1 CPU, 24 logical and 12 physical cores
 |------------- |-----------:|--------:|--------:|----------:|
 | ExampleOneSecondAsync | 1,009.5 ms | 4.98 ms | 4.66 ms |   7.44 KB |
 | ExampleHalfSecondAsync |   504.3 ms | 2.99 ms | 2.79 ms |   7.44 KB |
+
+## DependencyInjection
+| Method                      | Mean     | Error    | StdDev   | Gen0   | Allocated |
+|---------------------------- |---------:|---------:|---------:|-------:|----------:|
+| UsingDependencyInjection    | 26.26 ns | 0.136 ns | 0.121 ns |      - |         - |
+| NotUsingDependencyInjection | 30.36 ns | 0.434 ns | 0.385 ns | 0.0014 |      24 B |
