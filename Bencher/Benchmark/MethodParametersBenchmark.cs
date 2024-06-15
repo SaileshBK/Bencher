@@ -8,14 +8,14 @@ namespace Bencher.Benchmark;
 public class MethodParametersBenchmark
 {
     [Benchmark]
-    public void MethodWithoutRef()
+    public void NotUsingRef()
     {
         var test = new TestRefClass();
         MethodParameters.MethodWithoutRef(test);
     }
 
     [Benchmark]
-    public void MethodWithRef()
+    public void UsingRef()
     {
         var test = new TestRefClass();
         MethodParameters.MethodWithRef(ref test);

@@ -8,19 +8,19 @@ namespace Bencher.Benchmark
     public class ControlFlowFunctionsBenchmark
     {
         [Benchmark]
-        public void MethodWithIfAndElse()
+        public void UsingIfAndElse()
         {
             ControlFlowFunctions.MethodWithIfAndElse(Constants.TestString);
         }
 
         [Benchmark]
-        public void MethodWithSwitch()
+        public void UsingSwitch()
         {
             ControlFlowFunctions.MethodWithSwitch(Constants.TestString);
         }
 
         [Benchmark]
-        public void MethodWithSwitchExpression()
+        public void UsingSwitchExpression()
         {
             ControlFlowFunctions.MethodWithSwitchExpression(Constants.TestString);
         }

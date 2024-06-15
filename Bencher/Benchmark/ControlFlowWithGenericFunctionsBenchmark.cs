@@ -9,7 +9,7 @@ namespace Bencher.Benchmark
     public class ControlFlowWithGenericFunctionsBenchmark
     {
         [Benchmark]
-        public void MethodWithIfAndElse()
+        public void UsingIfAndElse()
         {
             for (var i = 0; i < 10; i++)
             {
@@ -18,7 +18,7 @@ namespace Bencher.Benchmark
         }
 
         [Benchmark]
-        public void MethodWithSwitch()
+        public void UsingSwitch()
         {
             for (var i = 0; i < 10; i++)
             {
@@ -27,7 +27,7 @@ namespace Bencher.Benchmark
         }
 
         [Benchmark]
-        public void MethodWithSwitchExpression()
+        public void UsingSwitchExpression()
         {
             for (var i = 0; i < 10; i++)
             {

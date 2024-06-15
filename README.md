@@ -14,31 +14,29 @@ AMD Ryzen 9 5900X, 1 CPU, 24 logical and 12 physical cores
 
 ## StingConcatFunctions
 
-
 | Method              | Mean     | Error    | StdDev   | Gen0   | Allocated |
 |-------------------- |---------:|---------:|---------:|-------:|----------:|
-| MethodWithTake      | 49.71 ns | 0.428 ns | 0.401 ns | 0.0167 |     280 B |
-| MethodWithSubstring | 30.90 ns | 0.570 ns | 0.476 ns | 0.0086 |     144 B |
-| MethodWithSlice     | 18.51 ns | 0.253 ns | 0.224 ns | 0.0086 |     144 B |
-| MethodWithRange     | 19.38 ns | 0.409 ns | 0.546 ns | 0.0086 |     144 B |
+| UsingTake      | 49.71 ns | 0.428 ns | 0.401 ns | 0.0167 |     280 B |
+| UsingSubstring | 30.90 ns | 0.570 ns | 0.476 ns | 0.0086 |     144 B |
+| UsingSlice     | 18.51 ns | 0.253 ns | 0.224 ns | 0.0086 |     144 B |
+| UsingRange     | 19.38 ns | 0.409 ns | 0.546 ns | 0.0086 |     144 B |
 
 
 ## ControlFlowFunctions
 
-
 | Method                     | Mean      | Error     | StdDev    | Median    | Allocated |
 |--------------------------- |----------:|----------:|----------:|----------:|----------:|
-| MethodWithIfAndElse        | 2.5309 ns | 0.0059 ns | 0.0049 ns | 2.5308 ns |         - |
-| MethodWithSwitch           | 0.0052 ns | 0.0088 ns | 0.0074 ns | 0.0015 ns |         - |
-| MethodWithSwitchExpression | 0.0016 ns | 0.0046 ns | 0.0038 ns | 0.0000 ns |         - |
+| UsingIfAndElse        | 2.5309 ns | 0.0059 ns | 0.0049 ns | 2.5308 ns |         - |
+| UsingSwitch           | 0.0052 ns | 0.0088 ns | 0.0074 ns | 0.0015 ns |         - |
+| UsingSwitchExpression | 0.0016 ns | 0.0046 ns | 0.0038 ns | 0.0000 ns |         - |
 
 ## ControlFlowWithGenericFunctions
 
 | Method                     | Mean      | Error    | StdDev   | Allocated |
 |--------------------------- |----------:|---------:|---------:|----------:|
-| MethodWithIfAndElse        |  31.99 ns | 0.163 ns | 0.152 ns |         - |
-| MethodWithSwitch           | 110.30 ns | 0.673 ns | 0.630 ns |         - |
-| MethodWithSwitchExpression | 107.93 ns | 0.293 ns | 0.274 ns |         - |
+| UsingIfAndElse        |  31.99 ns | 0.163 ns | 0.152 ns |         - |
+| UsingSwitch           | 110.30 ns | 0.673 ns | 0.630 ns |         - |
+| UsingSwitchExpression | 107.93 ns | 0.293 ns | 0.274 ns |         - |
 
 ## Logger
 
@@ -52,16 +50,18 @@ AMD Ryzen 9 5900X, 1 CPU, 24 logical and 12 physical cores
 
 | Method           | Mean     | Error     | StdDev    | Gen0   | Allocated |
 |----------------- |---------:|----------:|----------:|-------:|----------:|
-| MethodWithoutRef | 3.985 ns | 0.0501 ns | 0.0444 ns | 0.0014 |      24 B |
-| MethodWithRef    | 4.027 ns | 0.0980 ns | 0.1048 ns | 0.0014 |      24 B |
+| NotUsingRef | 3.985 ns | 0.0501 ns | 0.0444 ns | 0.0014 |      24 B |
+| UsingRef    | 4.027 ns | 0.0980 ns | 0.1048 ns | 0.0014 |      24 B |
 
 ## AsyncTask
+
 | Method       | Mean       | Error   | StdDev  | Allocated |
 |------------- |-----------:|--------:|--------:|----------:|
 | ExampleOneSecondAsync | 1,009.5 ms | 4.98 ms | 4.66 ms |   7.44 KB |
 | ExampleHalfSecondAsync |   504.3 ms | 2.99 ms | 2.79 ms |   7.44 KB |
 
 ## DependencyInjection
+
 | Method                      | Mean     | Error    | StdDev   | Gen0   | Allocated |
 |---------------------------- |---------:|---------:|---------:|-------:|----------:|
 | UsingDependencyInjection    | 26.26 ns | 0.136 ns | 0.121 ns |      - |         - |

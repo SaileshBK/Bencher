@@ -8,25 +8,25 @@ namespace Bencher.Benchmark;
 public class StingConcatFunctionsBenchmark
 {
     [Benchmark]
-    public void MethodWithTake()
+    public void UsingTake()
     {
         StingConcatFunctions.MethodWithTake(Constants.TestString);
     }
 
     [Benchmark]
-    public void MethodWithSubstring()
+    public void UsingSubstring()
     {
         StingConcatFunctions.MethodWithSubstring(Constants.TestString);
     }
 
     [Benchmark]
-    public void MethodWithSlice()
+    public void UsingSlice()
     {
         StingConcatFunctions.MethodWithSlice(Constants.TestString);
     }
 
     [Benchmark]
-    public void MethodWithRange()
+    public void UsingRange()
     {
         StingConcatFunctions.MethodWithRange(Constants.TestString);
     }
