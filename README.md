@@ -66,3 +66,11 @@ AMD Ryzen 9 5900X, 1 CPU, 24 logical and 12 physical cores
 |---------------------------- |---------:|---------:|---------:|-------:|----------:|
 | UsingDependencyInjection    | 26.26 ns | 0.136 ns | 0.121 ns |      - |         - |
 | NotUsingDependencyInjection | 30.36 ns | 0.434 ns | 0.385 ns | 0.0014 |      24 B |
+
+## Error-Or
+ Package: `https://github.com/amantinband/error-or`
+
+| Method           | Mean        | Error     | StdDev    | Gen0   | Allocated |
+|----------------- |------------:|----------:|----------:|-------:|----------:|
+| UsingError_Or    |    27.11 ns |  0.575 ns |  0.615 ns | 0.0110 |     184 B |
+| NotUsingError_Or | 4,297.04 ns | 21.195 ns | 19.826 ns | 0.0153 |     344 B |

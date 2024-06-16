@@ -20,6 +20,7 @@ class Program
         //RunBenchmark<MethodParametersBenchmark>();
         //RunBenchmark<AsyncTaskBenchmark>();
         //RunBenchmark<DependencyInjectionBenchmark>();
+        RunBenchmark<Error_OrBenchmark>();
 
         // Test Function Outputs
         //FunctionVerifier.Verify(Function.MethodParameters);
