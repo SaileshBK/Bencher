@@ -48,7 +48,7 @@ internal static class ControlFlowWithGenericFunctions
         }
     }
 
-    public static string MethodWithSwitch<T>(string condition) where T: class
+    public static string MethodWithSwitch<T>(string condition) where T : class
     {
         switch (typeof(T))
         {

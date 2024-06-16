@@ -20,7 +20,6 @@ public class DependencyInjectionBenchmark
         _serviceProvider = serviceCollection.BuildServiceProvider();
         _usingDependencyInjection = new UsingDependencyInjection(_serviceProvider.GetService<IExampleService>()!);
         _notUsingDependencyInjection = new NotUsingDependencyInjection();
-
     }
 
     [Benchmark]

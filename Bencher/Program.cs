@@ -3,13 +3,13 @@ using BenchmarkDotNet.Running;
 
 namespace Bencher;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         /*
          * To run the Benchmark Simply pass the benchmark class and run it
-         * on Release mode. 
+         * on Release mode.
          * For example : RunBenchmark<ClassNeedToBenchMark>();
          */
 
@@ -20,7 +20,7 @@ class Program
         //RunBenchmark<MethodParametersBenchmark>();
         //RunBenchmark<AsyncTaskBenchmark>();
         //RunBenchmark<DependencyInjectionBenchmark>();
-        RunBenchmark<Error_OrBenchmark>();
+        //RunBenchmark<Error_OrBenchmark>();
 
         // Test Function Outputs
         //FunctionVerifier.Verify(Function.MethodParameters);
@@ -31,4 +31,3 @@ class Program
         BenchmarkRunner.Run<T>();
     }
 }
-

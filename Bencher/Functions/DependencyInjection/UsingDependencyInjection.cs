@@ -11,7 +11,7 @@ public class UsingDependencyInjection
         _exampleService = exampleService;
     }
 
-    public int  RunExampleMethod()
+    public int RunExampleMethod()
     {
         return _exampleService.ExampleMethod();
     }

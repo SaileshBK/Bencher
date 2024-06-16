@@ -1,6 +1,4 @@
-﻿using Bencher.Dummy.Classes;
-
-namespace Bencher.Utilities;
+﻿namespace Bencher.Utilities;
 
 public static class Constants
 {

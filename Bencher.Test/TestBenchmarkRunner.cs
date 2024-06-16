@@ -27,9 +27,9 @@ namespace Bencher.Test
 
         private void AssertBenchmarkResults(Summary summary)
         {
-            var exampleOneSecondAsync = summary.Reports.FirstOrDefault(r => 
+            var exampleOneSecondAsync = summary.Reports.FirstOrDefault(r =>
                 r.BenchmarkCase.Descriptor.WorkloadMethod.Name == nameof(AsyncTaskBenchmark.ExampleOneSecondAsync));
-            var exampleHalfSecondAsync = summary.Reports.FirstOrDefault(r => 
+            var exampleHalfSecondAsync = summary.Reports.FirstOrDefault(r =>
                 r.BenchmarkCase.Descriptor.WorkloadMethod.Name == nameof(AsyncTaskBenchmark.ExampleHalfSecondAsync));
 
             var resultExpectation = "ExampleHalfSecondAsync should allocate same memory as ExampleOneSecondAsync";

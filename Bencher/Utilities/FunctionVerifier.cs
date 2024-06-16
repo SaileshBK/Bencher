@@ -16,8 +16,7 @@ namespace Bencher.Utilities
                 default:
                     Console.WriteLine("Not Implemented");
                     break;
-            }   
-
+            }
         }
 
         private static void FunctionParameter()
@@ -31,7 +30,7 @@ namespace Bencher.Utilities
             MethodParameters.MethodWithoutRef(test);
             Console.WriteLine($"Using Method: {test.FinalValue}");
 
-            // With ref the re-assignment of object will modify original 
+            // With ref the re-assignment of object will modify original
             MethodParameters.MethodWithRef(ref test);
             Console.WriteLine($"Using Method: {test.FinalValue}");
         }

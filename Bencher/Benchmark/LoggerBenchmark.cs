@@ -16,7 +16,6 @@ public class LoggerBenchmark
             builder.AddConsole();
         });
         _logger = loggerFactory.CreateLogger<LoggerBenchmark>();
-
     }
 
     [Benchmark]
@@ -35,4 +34,5 @@ public class LoggerBenchmark
     public void StringInterpolation()
     {
         Logger.StringInterpolation(_logger);
-    }}
+    }
+}

@@ -1,6 +1,6 @@
-﻿using BenchmarkDotNet.Attributes;
-using Bencher.Functions;
+﻿using Bencher.Functions;
 using Bencher.Utilities;
+using BenchmarkDotNet.Attributes;
 
 namespace Bencher.Benchmark;
 

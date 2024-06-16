@@ -30,4 +30,3 @@ public class Error_OrBenchmark
         return _error_Or?.NotUsingError_Or()!;
     }
 }
-
