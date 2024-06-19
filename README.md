@@ -1,9 +1,11 @@
 # Run
     /*
-     * To run the Benchmark, Open Program.cs. Simply pass the benchmark class and run it
-     * on Release mode. 
-     * For example : RunBenchmark<ClassNeedToBenchMark>();
+     * To run the Bencher Simply set Bencher as Startup project and run.
+     * Note: Run it on Release mode.
      */
+
+# Demo
+![bencher-demo](https://github.com/SaileshBK/Bencher/assets/101400043/bede4256-912e-450c-8a7c-5c9b26767e78)
 
 # Summary
 BenchmarkDotNet v0.13.12, Windows 10
@@ -74,3 +76,8 @@ AMD Ryzen 9 5900X, 1 CPU, 24 logical and 12 physical cores
 |----------------- |------------:|----------:|----------:|-------:|----------:|
 | UsingError_Or    |    27.11 ns |  0.575 ns |  0.615 ns | 0.0110 |     184 B |
 | NotUsingError_Or | 4,297.04 ns | 21.195 ns | 19.826 ns | 0.0153 |     344 B |
+
+
+## Contributing
+Thank you for considering contributing to Bencher! 
+For information on contributing to this project, please see the [contributing guide](.github/CONTRIBUTING.md).
