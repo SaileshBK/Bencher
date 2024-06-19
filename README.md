@@ -77,6 +77,13 @@ AMD Ryzen 9 5900X, 1 CPU, 24 logical and 12 physical cores
 | UsingError_Or    |    27.11 ns |  0.575 ns |  0.615 ns | 0.0110 |     184 B |
 | NotUsingError_Or | 4,297.04 ns | 21.195 ns | 19.826 ns | 0.0153 |     344 B |
 
+## EnumToString
+| Method                     | Mean       | Error     | StdDev    | Gen0   | Allocated |
+|--------------------------- |-----------:|----------:|----------:|-------:|----------:|
+| UsingSimpleEnumToString    | 12.4006 ns | 0.0977 ns | 0.0866 ns | 0.0014 |      24 B |
+| UsingFullyMappedNameOfEnum |  1.2797 ns | 0.0143 ns | 0.0134 ns |      - |         - |
+| UsingNameOfEnum            |  0.6748 ns | 0.0257 ns | 0.0240 ns |      - |         - |
+
 
 ## Contributing
 Thank you for considering contributing to Bencher! 
