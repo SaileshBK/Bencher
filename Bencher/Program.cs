@@ -1,26 +1,17 @@
-﻿using Bencher.Benchmark;
+﻿using Bencher.Utilities;
 using BenchmarkDotNet.Running;
 
 namespace Bencher;
 
 internal class Program
 {
+    /*
+     * To run the Bencher Simply set Bencher as Startup project and run.
+     * Note: Run it on Release mode.
+     */
     private static void Main(string[] args)
     {
-        /*
-         * To run the Benchmark Simply pass the benchmark class and run it
-         * on Release mode.
-         * For example : RunBenchmark<ClassNeedToBenchMark>();
-         */
-
-        //RunBenchmark<StingConcatFunctionsBenchmark>();
-        //RunBenchmark<ControlFlowFunctionsBenchmark>();
-        //RunBenchmark<ControlFlowWithGenericFunctionsBenchmark>();
-        //RunBenchmark<LoggerBenchmark>();
-        //RunBenchmark<MethodParametersBenchmark>();
-        //RunBenchmark<AsyncTaskBenchmark>();
-        //RunBenchmark<DependencyInjectionBenchmark>();
-        //RunBenchmark<Error_OrBenchmark>();
+        MainMenu.ShowMenu();
 
         // Test Function Outputs
         //FunctionVerifier.Verify(Function.MethodParameters);
