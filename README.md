@@ -84,6 +84,11 @@ AMD Ryzen 9 5900X, 1 CPU, 24 logical and 12 physical cores
 | UsingFullyMappedNameOfEnum |  1.2797 ns | 0.0143 ns | 0.0134 ns |      - |         - |
 | UsingNameOfEnum            |  0.6748 ns | 0.0257 ns | 0.0240 ns |      - |         - |
 
+## ObjectDiffer
+| Method              | Mean     | Error     | StdDev    | Gen0   | Gen1   | Allocated |
+|-------------------- |---------:|----------:|----------:|-------:|-------:|----------:|
+| UsingObjectDifferV1 | 3.135 us | 0.0626 us | 0.1063 us | 0.6523 | 0.0038 |  10.69 KB |
+| UsingObjectDifferV2 | 2.534 us | 0.0335 us | 0.0297 us | 0.1678 |      - |   2.77 KB |
 
 ## Contributing
 Thank you for considering contributing to Bencher! 
