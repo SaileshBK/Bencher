@@ -1,5 +1,4 @@
 ﻿using Bencher.Utilities.Menu;
-using BenchmarkDotNet.Running;
 
 namespace Bencher;
 
@@ -15,10 +14,5 @@ internal class Program
 
         // Test Function Outputs
         //FunctionVerifier.Verify(Function.MethodParameters);
-    }
-
-    public static void RunBenchmark<T>() where T : class
-    {
-        BenchmarkRunner.Run<T>();
     }
 }
