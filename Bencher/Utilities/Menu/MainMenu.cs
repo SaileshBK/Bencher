@@ -34,7 +34,7 @@ internal static class MainMenu
             .Status()
             .Start("->", ctx =>
             {
-                ctx.Spinner(new BencherSpinner()).SpinnerStyle(Style.Parse("green"));
+                ctx.Spinner(BencherKnownSpinners.StartingSpinner).SpinnerStyle(Style.Parse("green"));
                 GetAllAvailableBenchmarkTypes();
                 Thread.Sleep(2500);
             });
