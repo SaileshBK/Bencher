@@ -2,7 +2,7 @@
 using Spectre.Console;
 using System.Reflection;
 
-namespace Bencher.Utilities;
+namespace Bencher.Utilities.Menu;
 
 internal static class MainMenu
 {
@@ -32,12 +32,11 @@ internal static class MainMenu
     {
         AnsiConsole
             .Status()
-            .Start("Starting Bencher...", ctx =>
+            .Start("->", ctx =>
             {
-                ctx.Spinner(Spinner.Known.Star);
-                ctx.SpinnerStyle(Style.Parse("green"));
+                ctx.Spinner(new BencherSpinner()).SpinnerStyle(Style.Parse("green"));
                 GetAllAvailableBenchmarkTypes();
-                Thread.Sleep(2000);
+                Thread.Sleep(2500);
             });
     }
 

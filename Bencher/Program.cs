@@ -1,4 +1,4 @@
-﻿using Bencher.Utilities;
+﻿using Bencher.Utilities.Menu;
 using BenchmarkDotNet.Running;
 
 namespace Bencher;
