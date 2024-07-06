@@ -1,14 +1,16 @@
 ﻿using Bencher.Dummy.Classes;
 using Bencher.Functions;
 using BenchmarkDotNet.Attributes;
+using MongoDB.Bson;
 
 namespace Bencher.Benchmark;
 
 [MemoryDiagnoser]
 public class ObjectDifferBenchmark
 {
-    private static ExamplePayload _examplePayload1 = new();
-    private static ExamplePayload _examplePayload2 = new();
+    private static ExamplePayload _examplePayload1;
+    private static ExamplePayload _examplePayload2;
+    
     [GlobalSetup]
     public void Setup()
     {
@@ -19,16 +21,16 @@ public class ObjectDifferBenchmark
             Property3 =
              [
                  new()
-                {
+                 {
                     PayloadType = false
-                }
+                 }
              ]
         };
 
         _examplePayload2 = new()
         {
             Property1 = false,
-            Property2 = "test",
+            Property2 = "not test",
             Property3 =
             [
                 new()
@@ -50,5 +52,11 @@ public class ObjectDifferBenchmark
     public string UsingObjectDifferV2()
     {
         return ObjectDiffer.RandomMethodV2(_examplePayload1, _examplePayload2);
+    }
+
+    [Benchmark]
+    public string UsingObjectDifferV3()
+    {
+        return ObjectDiffer.RandomMethodV3(_examplePayload1.ToBsonDocument(), _examplePayload2.ToBsonDocument());
     }
 }
