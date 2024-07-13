@@ -11,8 +11,5 @@ internal class Program
     private static void Main(string[] args)
     {
         MainMenu.ShowMenu();
-
-        // Test Function Output
-        //FunctionVerifier.Verify(Function.MethodParameters);
     }
 }
