@@ -12,7 +12,7 @@ internal class Program
     {
         MainMenu.ShowMenu();
 
-        // Test Function Outputs
+        // Test Function Output
         //FunctionVerifier.Verify(Function.MethodParameters);
     }
 }
