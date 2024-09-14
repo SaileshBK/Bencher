@@ -2,7 +2,7 @@
 
 namespace Bencher;
 
-internal class Program
+internal sealed class Program
 {
     /*
      * To run the Bencher Simply set as Startup project and run.
