@@ -16,4 +16,5 @@ public static class EnumToString
     }
 
     public static string NameOfEnum(ExampleEnums exampleEnums) => nameof(exampleEnums);
+    public static string GetName(ExampleEnums exampleEnums) => Enum.GetName(exampleEnums)!;
 }

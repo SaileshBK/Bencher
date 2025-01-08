@@ -24,4 +24,10 @@ public class EnumToStringBenchmark
     {
         return EnumToString.NameOfEnum(ExampleEnums.Enum1);
     }
+
+    [Benchmark]
+    public string UsingGetName()
+    {
+        return EnumToString.GetName(ExampleEnums.Enum1);
+    }
 }
