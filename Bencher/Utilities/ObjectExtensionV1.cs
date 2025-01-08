@@ -35,7 +35,7 @@ public static class ObjectExtensionV1
                 }
             }
         }
-        catch (Exception ex)
+        catch (Exception)
         {
 
         }

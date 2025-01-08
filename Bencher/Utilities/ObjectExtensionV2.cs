@@ -35,7 +35,7 @@ namespace Bencher.Utilities
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }
